@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>赵岩博客</title>
+	<link rel="icon" href="../img/Person.png">
+	<link rel="stylesheet" href="./static/css/public.css">
+	<link rel="stylesheet" href="../css/public.css">
+	<script src="static/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<section id="header">
+		<div class="header_content">
+			<p class="header_left">赵岩个人博客</p>
+			<div class="header_right">
+				<a href="../index.html" class="header_nav">首页</a>
+				<a href="qianduan.html" class="header_nav">聊聊前端</a>
+				<a href="xuexibiji.html" class="header_nav">学习笔记</a>
+				<a href="wochuangzuo.html" class="header_nav">我创作</a>
+				<a href="aboutme.html" class="header_nav">关于我</a>
+				<a href="#" class="header_nav">留言</a>
+			</div>
+		</div>
+	</section>
+	<!-- 头部结束 -->
+	<div style="width: 100%;height: 46px; position: relative;"></div>
+	<!-- 内容开始 -->
+	<section id="content">
+
+		<div class="content_left">
+		<script>
+			// window.onload=function(){
+				
+
+			// 		// var iHeight=oLi.offsetHeight;
+			// 		// oLi.style.height='0';
+			// 	}
+			// }
+		</script>
+			<div class="content_left_title">
+				<span>首页&gt留言</span>
+				<div class="content_left_line"></div>
+			</div>
+			<button id="signup">客户登录</button>
+			<textarea id="liuyankuang" cols="100" rows="5" placeholder="有事没事说两句······"></textarea>
+			<input type="submit" id='liuyan_submit' value="说一下">
+			<h1 class="pinglun">评论</h1>
+			<div class="content_left_line"></div>
+			<ul class="content_left_ul" id="content_left_ul">
+			</ul>
+
+		</div>
+
+		<div class="content_right">
+			<div class="content_right_person">
+				<div class="content_right_person_title">
+					<div class="content_right_person_line"></div>
+					<div class="content_right_person_header">
+						<img src="../img/Person.png" alt="">
+					</div>
+					<div class="content_right_person_line"></div>
+				</div>
+				<div class="content_right_person_jieshao">网名：colazhao</div>
+				<div class="content_right_person_jieshao">职业：准web前端工程师</div>
+				<div class="content_right_person_jieshao">邮箱：zhaoyan6113@163.com</div>
+			</div>
+
+			<div class="content_right_tuijian">
+				<div class="content_right_tuijian_title">
+					<div class="content_right_tuijian_line"></div>
+					<span>本栏推荐</span>
+					<div class="content_right_tuijian_line content_right_tuijian_line1"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 内容结束 -->
+	<!-- 弹出框开始 -->
+
+	<script>
+		window.onload=function(){
+			var Obtn=document.getElementById('signup');
+			var Odiv=document.getElementById('tanchu');
+			var Obtn1=document.getElementById('tanchu_close');
+
+			Obtn.onclick=function(){
+				Odiv.style.display='block';
+
+			}
+			Obtn1.onclick=function(){
+				Odiv.style.display='none';
+			}
+            document.getElementById('login').onclick=function() {
+			    alert('登陆成功');
+                Odiv.style.display='none';
+
+                // var username=document.getElementById('user').value;
+				// var pwd=document.getElementById('pass').value;
+				// $.ajax({
+				// 	url:'/login',
+				// 	data:{user:username,pass:pwd},
+				// 	success:function (data) {
+				// 	    alert(data.msg)
+                 //    }
+				// })
+			}
+
+
+			var oTxt=document.getElementById('liuyankuang');
+				var oSub=document.getElementById('liuyan_submit');
+				var oUl=document.getElementById('content_left_ul');
+
+				oSub.onclick=function(){
+					var oLi=document.createElement('li');
+					oLi.innerHTML=oTxt.value;
+					oTxt.value='';
+					if(oUl.children.length==0)
+					{
+						oUl.appendChild(oLi);
+					}
+					else
+					{
+						oUl.insertBefore(oLi,oUl.children[0]);
+					}
+					// var iHeight=oLi.offsetHeight;
+					// oLi.style.height='0';
+				}
+		}
+	</script>
+	<div id="tanchu">
+		<div class="tanchu_content">
+			<button id='tanchu_close' class="tanchu_close">&#xe635;</button>
+			<form action="" class="tanchu_content1" method="get">
+				<label for="">用户名：<input type="text" id="user"></label><br>
+				<label for="">&nbsp&nbsp&nbsp密码：<input type="password" id="pass"></label><br>
+				<input type="submit" value="登录" class="tanchu_content1_submit" id="login">
+			</form>
+		</div>
+	</div>
+	<!-- 弹出框结束 -->
+	<!-- 底部开始 -->
+	<section id="footer">Design by 赵岩个人博客</section>
+	<!-- 底部结束 -->
+</body>
+</html>

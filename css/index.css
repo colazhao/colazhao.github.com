@@ -1,0 +1,117 @@
+#banner{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+.bannertu{
+	width: 1370px;
+	height: 1027.5px;
+	display: block;
+	margin: 0 auto;
+	margin-top: -335px;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.banner_content{
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.banner_touxiang{
+	width:150px;
+	height: 150px;
+	background-color: white;
+	margin-top: 75px;
+	margin-left: 50px;
+	float: left;
+}
+.banner_touxiang img{
+	width: 150px;
+	height: 150px;
+}
+.banner_miaoshu{
+	width: 850px;
+	height: 150px;
+	margin-top: 75px;
+	margin-left: 40px;
+	float: left;
+}
+.banner_1hang{
+	margin-top: 12px;
+}
+.banner_user{
+	font-size: 26px;
+	font-weight: 600;
+	font-family: "苹方","Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color: white;
+	margin-top: 15px;
+}
+.banner_worker{
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "苹方","Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color: white;
+	margin-top: 19px;
+	margin-left: 30px;
+	
+}
+.banner_2hang{
+	margin-top: 10px;
+}
+.banenr_sex{
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "苹方","Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color: white;
+	margin-top: 15px;
+}
+.banenr_age{
+	margin-left: 20px;
+}
+.banner_2hang p{
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "苹方","Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color: white;
+	line-height: 26px;
+}
+.banner_bottom{
+	width: 1050px;
+	height: 24px;
+	margin-top: 15px;
+	padding-left: 50px;
+	float: left;
+}
+.banner_bottom img{
+	margin-left: 12px;
+	cursor: pointer;
+}
+.banner_pencil{
+	font-size: 12px;
+	font-weight: 400;
+	font-family: "苹方","Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color: white;
+	margin-left: 3px;
+}
+#banner_more{
+	width: 72px;
+	height: 24px;
+	background-color: #eb6100;
+	border: 0;
+	border-radius: 5px;
+	margin-left: 45px;
+	margin-top: -15px;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: "苹方","Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color: white;
+	text-align: center;
+	line-height: 24px;
+	cursor: pointer;
+}
